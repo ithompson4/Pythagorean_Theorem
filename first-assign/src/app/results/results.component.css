@@ -1,0 +1,32 @@
+.btn {
+    margin-top: 20px;
+}
+.triangle {
+    height: 0;
+    width: 0;
+    border-bottom: 200px solid gray;
+    border-right: 300px solid transparent;
+}
+.hypotenuse {
+    color: green;
+    font-size: 20px;
+    position: relative;
+    left: 150px;
+    top: 65px;
+    display: inline-block;
+}
+.col {
+    display: inline-block;
+ }
+ .side1 {
+    position: relative;
+    top: 25%;
+    width: 50px;
+ }
+ .side2 {
+    position: relative;
+    left: 120px;
+    top: 10px;
+    width:50px;
+ }
+

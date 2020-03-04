@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="margin-top: 20px;">
+        <div class="col-12 col-md-6 cl-xl-6">
+            <div>
+                <div class="card bg-light">
+                    <article class="card-body mx-auto" style="max-width: 500px;">
+                        <div class="row">
+                            <div class="col">
+                                <div>&nbsp;</div>
+                                <div class="form-group side1">
+                                    <input 
+                                        type="text"
+                                        id="side1"
+                                        name="side1" 
+                                        class="form-control"
+                                        [(ngModel)]="side1"
+                                    >
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="triangle">
+                                    <span *ngIf="showResult" class="hypotenuse">{{ result }}</span>
+                                </div>
+                                <div class="form-group side2">
+                                    <input 
+                                        type="text" 
+                                        id="side2"
+                                        name="side2" 
+                                        class="form-control"
+                                        [(ngModel)]="side2"
+                                    >
+                                </div>
+                              </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-lg btn-block" 
+                                    (click)="handleCalculate()">Calculate!</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-danger btn-lg btn-block" 
+                                    (click)="handleReset()">Reset</button>
+                        </div>
+                    </article>                                                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
